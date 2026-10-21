@@ -116,6 +116,29 @@ This provides visibility into configured error conditions and demonstrates basic
 
 ---
 
+## Project Screenshots
+
+### 1. Live Website
+![CloudMart live website](screenshots/01-website-live.png)
+
+### 2. Private S3 Bucket
+![S3 bucket security configuration](screenshots/02-s3-private-bucket.png)
+
+### 3. CloudFront and OAC
+![CloudFront OAC configuration](screenshots/03-cloudfront-oac.png)
+
+### 4. Route 53 DNS Records
+![Route 53 hosted zone records](screenshots/04-route53-records.png)
+
+### 5. ACM SSL/TLS Certificate
+![ACM certificate](screenshots/05-acm-certificate.png)
+
+### 6. CloudWatch Alarm
+![CloudWatch CloudFront error alarm](screenshots/06-cloudwatch-alarm.png)
+
+### 7. SNS Email Notifications
+![SNS email subscription](screenshots/07-sns-email-subscription.png)
+
 **Project Status:** Deployed and accessible over HTTPS.
 
 **Live Demo:** https://www.trickyspy.linkpc.net
