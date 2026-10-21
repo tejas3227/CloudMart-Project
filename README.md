@@ -11,7 +11,7 @@ Website Visitor
       |
       | HTTPS Request
       v
-DNSExit — Free Subdomain and DNS Delegation
+DNSExit — Subdomain
       |
       v
 Amazon Route 53 — Authoritative DNS
@@ -49,7 +49,7 @@ Amazon CloudWatch → CloudWatch Alarm → Amazon SNS → Email
 | Amazon CloudFront | Delivers website content through a CDN and supports HTTPS. |
 | Origin Access Control (OAC) | Secures access between CloudFront and the private S3 origin. |
 | Amazon Route 53 | Hosts authoritative DNS records for the custom subdomain. |
-| DNSExit | Provides the free subdomain and nameserver delegation configuration. |
+| DNSExit | Provides the subdomain and nameserver configuration. |
 | AWS Certificate Manager (ACM) | Provides the SSL/TLS certificate used by CloudFront. |
 | Amazon CloudWatch | Monitors CloudFront metrics and evaluates alarm conditions. |
 | Amazon SNS | Delivers configured alarm notifications by email. |
@@ -57,7 +57,6 @@ Amazon CloudWatch → CloudWatch Alarm → Amazon SNS → Email
 ## Key Features
 
 - Responsive static e-commerce-style frontend built with HTML, CSS, and JavaScript.
-- Product listings, product search, category filtering, and a demonstration shopping cart.
 - Custom subdomain configured with DNSExit and Amazon Route 53.
 - HTTPS-enabled website delivery using an ACM public certificate.
 - HTTP-to-HTTPS redirection through CloudFront.
@@ -85,7 +84,7 @@ Troubleshooting steps included:
 - Checking the CloudFront origin configuration and cache policy.
 - Creating a CloudFront invalidation for updated content.
 - Reducing the cache TTL using a custom CloudFront cache policy.
-- Inspecting HTTP response headers such as `X-Cache`, `Age`, `ETag`, and `Last-Modified`.
+- Inspecting HTTP response headers such as `X-Cache`, `Age` and `Last-Modified`.
 
 These steps helped me understand CDN caching, cache expiration, invalidations, and content freshness.
 
@@ -101,7 +100,7 @@ This provides visibility into configured error conditions and demonstrates basic
 
 **AWS:** Amazon S3, Amazon CloudFront, Amazon Route 53, AWS Certificate Manager, Origin Access Control, Amazon CloudWatch, Amazon SNS
 
-**DNS:** DNSExit, DNS delegation, CNAME records
+**DNS:** DNSExit, CNAME records, NameServers
 
 **Security:** S3 Block Public Access, restricted bucket policy, HTTPS
 
