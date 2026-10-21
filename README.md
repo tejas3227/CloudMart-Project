@@ -2,6 +2,8 @@
 
 A responsive static e-commerce website deployed on AWS using Amazon S3, CloudFront, Route 53, and AWS Certificate Manager (ACM). The project demonstrates secure origin access, custom-domain configuration, HTTPS delivery, CDN caching, and cloud monitoring.
 
+Note : Live demo has been taken offline to avoid ongoing AWS costs.
+
 **Live Website:** [https://www.trickyspy.linkpc.net](https://www.trickyspy.linkpc.net)
 
 ## Architecture
