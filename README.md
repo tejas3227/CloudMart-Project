@@ -122,7 +122,7 @@ This provides visibility into configured error conditions and demonstrates basic
 ![CloudMart live website](screenshots/01-website-live.png)
 
 ### 2. Private S3 Bucket
-![S3 bucket security configuration](screenshots/02-s3-private-bucket.png)
+![S3 bucket security configuration](screenshots/02-private-s3bucket.png)  
 
 ### 3. CloudFront and OAC
 ![CloudFront OAC configuration](screenshots/03-cloudfront-oac.png)
