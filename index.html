@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CloudMart - Shop smart, shop simple.">
+    <title>CloudMart | Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Cloud<span>Mart</span></a>
+
+        <div class="search-box">
+            <input type="search" id="searchInput"
+                   placeholder="Search products..."
+                   aria-label="Search products">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <button class="cart-button" id="cartButton"
+                aria-expanded="false"
+                aria-controls="cartPanel">
+            🛒 Cart (<span id="cartCount">0</span>)
+        </button>
+    </header>
+
+    <nav class="navbar" aria-label="Product categories">
+        <button class="category active" data-category="All">All</button>
+        <button class="category" data-category="Electronics">Electronics</button>
+        <button class="category" data-category="Fashion">Fashion</button>
+        <button class="category" data-category="Home">Home</button>
+        <button class="category" data-category="Accessories">Accessories</button>
+    </nav>
+
+    <section id="cartPanel" class="cart-panel" hidden>
+        <div class="cart-heading">
+            <h2>Your Shopping Cart</h2>
+            <button id="closeCart" class="close-cart"
+                    aria-label="Close shopping cart">✕</button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+            <strong>Total: <span id="cartTotal">₹0</span></strong>
+        </div>
+
+        <div class="cart-actions">
+            <button id="clearCart" class="clear-cart">Clear Cart</button>
+        </div>
+        <p class="cart-note">Demo only. No real purchases or payments.</p>
+    </section>
+
+    <main>
+        <section class="hero">
+            <div>
+                <p class="eyebrow">WELCOME TO CLOUDMART</p>
+                <h1>Everything you need.<br>All in one place.</h1>
+                <p>Discover great products at prices you'll love.</p>
+                <a href="#products" class="shop-button">Explore Products ↓</a>
+            </div>
+            <div class="hero-icon" aria-hidden="true">🛍️</div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">OUR COLLECTION</p>
+                    <h2>Featured Products</h2>
+                </div>
+                <p id="resultCount" aria-live="polite"></p>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+
+            <p id="emptyMessage" class="empty-message" hidden>
+                No products found. Try another search.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 CloudMart | AWS Cloud Learning Project</p>
+        <p>Frontend demonstration — no real purchases or payments.</p>
+    </footer>
+
+</body>
+</html>
